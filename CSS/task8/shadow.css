@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#im1{
+    border: 2px solid red;
+    box-shadow: 5px 5px  5px rgb(146, 146, 45);
+    filter: blur(1px);
+}
+#p1{
+    border: 4px dashed red;
+    box-shadow: 2px 2px 2px 2px rgb(181, 181, 38)  ;
+    box-shadow: -2px -2px 2px 2px rgb(110, 235, 72);
+    box-shadow: inset 12px 12px 2px  rgb(240, 109, 216) , inset -2px -2px 2px  rgb(110, 235, 72);
+   
+    background: linear-gradient(50deg , rgb(7, 185, 13) , rgb(205, 21, 116));
+    -webkit-background-clip: text;
+     color: transparent;
+
+    font-style: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+    font-weight:bolder;
+    padding: 30px;
+    text-align: justify;
+    text-indent: 30px;
+
+
+}
+
+i{
+    color: crimson;
+    size: 32px;
+}
+h2{
+    color: chocolate;
+    text-shadow: 2px 2px 2px greenyellow;
+}
