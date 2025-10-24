@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(213, 255, 255);
+}
+.d1{
+    background-color: aliceblue;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px gray;
+    justify-content: space-between;
+    display: flex;
+}
+.d1 h4{
+
+    color: blue;
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    padding: 15px;
+    padding-inline: 20px;
+    padding-left: 10px;
+}
+a:hover{
+    border: 2px solid blue;
+    border-radius: 10px;
+    color: blue;
+}
+#div1{
+    display: flex;
+    margin: 20px 30px;
+    margin-top: 40px;
+   
+}
+
+.d2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.d2 h2{
+    font-size: 28px;
+}
+.d2 p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: rgb(111, 113, 113);
+    margin-top: 10px;
+    
+}
+.d3{
+    background-color: aliceblue;
+    border: 1px white;
+    border-radius: 5%;
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    margin-right: 50px;
+    box-shadow: 2px 2px 2px gray;
+}
+.d3 h3{
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.d3 p{
+    
+    color: rgb(137, 135, 135);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: blue;
+    color: aliceblue;
+    /* box-shadow: 2px 2px 2px gray; */
+    border: 1px blue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+.b1{
+    background-color: rgb(236, 236, 249);
+    color: rgb(20, 20, 20);
+    /* box-shadow: 1px 1px 1px gray; */
+    border: 1px blue;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+
+}
+b{
+    color: black;
+}

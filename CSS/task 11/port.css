@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .main1{
+padding: 15px;
+} */
+.d1
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(4, 4, 94);
+    color: aliceblue;
+    padding: 20px;
+}
+.d1 a {
+    color: aliceblue;
+    padding-inline: 10px;
+    text-decoration: none;
+}
+.d1 .nav a:hover {
+    border-bottom: 2px solid rgb(6, 238, 255);
+    padding: 2px;
+    /* border-spacing: 3px; */
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+div .sub1{
+   background-image: url("images/bg.jpg");
+    height: 300px;
+    width: 1158px;
+    background-size: cover;
+    
+}
+.s1{
+    height: 300px;
+    width: 280px;
+    padding: 150px;
+    padding-left: 200px;
+text-transform: uppercase;
+color: aliceblue;
+
+}
+.s1 p{
+    font-size: 10px;
+}
+#abt{
+    border-bottom:2px soild aqua ;
+}
+.sub2{
+    background-color:rgb(3, 3, 97);
+    background-size: cover;
+    height: 400px;
+    width: auto;
+    padding: 30px 50px;
+    
+    color: aliceblue;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+section div{
+    padding: 20px 0px;
+    width: 300px;
+}
+section p{
+    padding-bottom: 10px;
+    text-align: left;
+}
+section h2{
+    padding-bottom: 10px;
+}
+.sr3 .icon #icons{
+    /* background: transparent; */
+   outline: 3px solid rgb(7, 251, 222);
+   padding: 5px;
+   margin-right: 150px;
+    
+}
+.sr2 .icon #icon1{
+    /* background: transparent; */
+   outline: 3px solid rgb(7, 251, 222);
+   padding: 5px;
+    
+}
+hr{
+    width: 50px;
+    background-color: aqua;
+    height: 2px;
+    border: none;
+}
