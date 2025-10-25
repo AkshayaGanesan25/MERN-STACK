@@ -1,0 +1,62 @@
+ 
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(249, 249, 249);
+    }
+    .main1 {
+      background-color:  rgb(163, 207, 226);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 340px;
+      /* margin-top: 100px;
+      margin-left: 100px; */
+      width: 1000px;
+      padding: 20px;
+      margin: 50px 50px;
+      border-radius: 2px;
+      gap: 30px;
+    }
+    .programming , .secutiry{
+      height: 200px;
+      width: 500px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px rgb(162, 161, 161),-5px -5px 5px rgb(162, 161, 161);
+      padding: 30px;
+      color: var(--color);
+    }
+    
+    .title i {
+       background: linear-gradient(45deg, rgb(252, 64, 64), rgb(175, 65, 83), blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      font-size: 30px;
+    }
+    p{
+      margin-top: 10px;
+      font-family:sans-serif;
+    }
+    hr {
+      border: none; 
+      height: 5px; 
+      background-image: var(--bgcolor);
+       margin-top: 10px;
+    }
+    :root {
+      --bgcolor: linear-gradient(
+        to right,
+        rgb(166, 10, 77),
+        rgb(238, 128, 187),
+        blue
+      );
+      --color: rgb(76, 76, 76);
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
