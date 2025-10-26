@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arithmetic Operator
+        let a = 10;
+        let b = 5;
+        let c = 3;
+
+        console.log("1. Sum,Difference,Product and Quotient");
+        console.log("Sum of", a, "and", b, "is:", a + b);
+        console.log("Difference of", a, "and", b, "is:", a - b);
+        console.log("product of", a, "and", b, "is:", a * b);
+        console.log("quotient of", a, "and", b, "is:", a ** b);
+
+        console.log("2. three numbers and find their average.");
+        let avg = ((a + b + c) / 3)
+        console.log("Average of three number is:", avg);
+
+        console.log("3. area of a rectangle");
+        let l = 20, br = 10;
+        console.log("Area of rectangle:", l * br)
+
+        console.log("4. Convert temperature from Celsius to Fahrenheit using a formula.");
+        let  cel = 300;
+        fahrenheit = (cel * 9 / 5) + 32;
+        console.log("temperature from Celsius to Fahrenheit", fahrenheit);
+        console.log("5.Find the remainder when one number is divided by another.");
+        remainder=a%b;
+        console.log("Remainder",remainder);
+        
+        //Assignment Operators
+        console.log("6. Assign a number to a variable and then increase it by 10 using the += operator.");
+        let x= 20;
+        x+=10;
+        console.log("increase it by 10 using the += operator",x);
+        console.log("7. Write a program that multiplies a number by 5 using *=.");
+        let y=6;
+        y*=5;
+        console.log("multiplied  by 5 using *=",y);
+       console.log("8. Use -= to decrease the value of a variable by 3.");
+       console.log("Decreased by 3",y-=3);
+       console.log("9. Divide a variable by 2 using /= and print the updated result.");
+       console.log("Divided by 2",x/=2);
+       console.log("10. Combine multiple assignment operators in one example.");
+       let z=4;
+       console.log("Multiple Assignment opertaor ",(x*z)-y);
+       //Comparison Operators 
+       console.log("11. Compare two numbers and print whether they are equal or not.");
+       let m=30;
+       let n=3;
+       console.log("Equal or Not:",m==n);
+        console.log("12. Check if one number is greater than another.");
+        console.log("",m,"greater than",n,":",m>n);
+        console.log("13. Compare two string variables to check if they are the same.");
+        let u ="Akshaya"
+        let v="akshaya"
+       console.log("",u,"and",v,"are same:",u==v);
+       console.log("14. Test whether a number is less than or equal to 100.");
+       console.log("",m,"s less than or equal to 100:",m<=100);
+       console.log("15. Write a program to check if two numbers are strictly equal (===).");
+       console.log("",u,"and",v,"are same:",u===v);
+       //Logical Operators
+       console.log("16. Check if a number is between 10 and 50 using logical AND (&&).");
+       console.log("",m,"is between 10 and 50 using logical AND (&&):",(m>10)&&(m<100));
+       console.log("17. Check if a number is less than 10 OR greater than 100 using ||.");
+       console.log("",m,"is less than 10 OR greater than 100:",(m<10)||(m>100));
+       console.log("18. Use NOT (!) to invert a Boolean value.");
+       let k = "false"
+       console.log("NOT of",k,"is",!k);
+       console.log("19. Combine && and || in one statement to test a complex condition.");
+       let res= (m<10)||(m>100)&&(m<n);
+       console.log("&& and || ",res);
+       console.log("20. Check if a student passes (marks ≥ 35) using logical operators.");
+       console.log("",m,"≥ 35",m>=35);
+       //Increment & Decrement Operators
+       console.log("Create a counter that increases by 1 using ++.");
+       let d=6;
+       console.log("Increment:",++d);
+       console.log("22. Write a program that decreases a variable using --.");
+       console.log("Decrement:",--d);
+       console.log("23. Demonstrate the difference between pre-increment (++d) and post-increment (d++).");
+       console.log("++d:",++d,"d++:",d++);
+       console.log("24. Show how decrement works in a loop from 10 to 1.");
+       for (let i = 10; i >= 1; i--) {
+       
+        console.log("Decrement loop:",i);
+       }
+       console.log("25. Use ++ and -- in the same expression and observe the result.");
+       let q=15;
+       let r=26;
+
+       console.log("Use ++ and --:",(--q + r++));
+    //    Ternary Operator
+       console.log("26. Check if a number is even or odd using the ternary operator.");
+       let ans=(r%2==0) ? "Even Number" : "odd Number";
+       console.log("",r,"is:",ans);
+       console.log("27. Use the ternary operator to find the greater number between two variables.");
+       let grt=(r>q) ? r+" is greater than"+q : q+" is greater then" +r ;
+       console.log(grt);
+       console.log("Write a one-line ternary statement to check if a person can vote (age ≥ 18).");
+       let vote=(r>=18) ? "Eligible to vote" : " Not Eligible to vote" ;
+       console.log(vote);
+       console.log("29. Use nested ternary to find if a number is positive, negative, or zero.");
+      let rr=0;
+       let num= (rr==0)? "Zero":((rr < 0)?"Negative":"Positive");
+       console.log(num);
+       // Bitwise Operator
+       console.log("31. Find the bitwise AND of two numbers.");
+
+let andResult = a & b;
+console.log(a, "&", b, "=", andResult);
+
+
+console.log("32. Find the bitwise OR of two numbers.");
+let orResult = a | b;
+console.log(a, "|", b, "=", orResult);
+
+
+console.log("33. Find the bitwise XOR of two numbers.");
+let xorResult = a ^ b;
+console.log(a, "^", b, "=", xorResult);
+
+
+console.log("34. Perform left and right shift on a number.");
+let numb = 5;
+let leftShift = numb << 1;
+let rightShift = numb >> 1;
+console.log(numb, "<< 1 =", leftShift);
+console.log(numb, ">> 1 =", rightShift);
+
+
+console.log("35. Combine bitwise and logical operators in one example.");
+let xx = 5, yy = 3, zz = 0;
+if ((xx & yy) && (yy | zz)) {
+    console.log("Condition is true");
+} else {
+    console.log("Condition is false");
+}
+//Bonus Mixed Tasks
+console.log("36. Declare variables of different types and perform operations.");
+let str = "Hello";
+let num2 = 10;
+let flag = true;
+
+console.log("String + Number:", str + num2);   
+console.log("Number + Boolean:", num2 + flag); 
+console.log("String + Boolean:", str + flag); 
+
+
+console.log("37. Swap two numbers without using a third variable.");
+let a1 = 5, b1 = 10;
+console.log("Before Swap: a =", a1, "b =", b1);
+
+a1 = a1 + b1; 
+b1 = a1 - b1; 
+a1 = a1 - b1; 
+console.log("After Swap: a =", a1, "b =", b1);
+
+
+console.log("38. Combine arithmetic, comparison, and logical operators.");
+let x1 = 10, y1 = 20;
+if ((x1 + y1 > 25) && (x1 < y1)) {
+    console.log("Condition is true");
+} else {
+    console.log("Condition is false");
+}
+
+
+console.log("39. Check a person’s score using ternary operator.");
+let score = 85;
+let result = (score >= 90) ? "Excellent" : (score >= 50 ? "Pass" : "Fail");
+console.log("Score:", score, "Result:", result);
+
+
+console.log("40. Mini calculator using +, -, *, /, %, ** operators.");
+let p = 12, q1 = 4;
+
+console.log(p, "+", q1, "=", p + q1);
+console.log(p, "-", q1, "=", p - q1);
+console.log(p, "*", q1, "=", p * q1);
+console.log(p, "/", q1, "=", p / q1);
+console.log(p, "%", q1, "=", p % q1);
+console.log(p, "**", q1, "=", p ** q1);   
+    </script>
+</body>
+</html>
