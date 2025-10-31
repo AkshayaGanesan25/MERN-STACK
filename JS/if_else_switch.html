@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //If Else (basic level)
+        console.log("1. Check Positive or Negative Number")
+        let num = -5;
+        console.log(num > 0 ? "Positive" : "Negative");
+
+        console.log("2. Check Even or Odd")
+        let a=5;
+        console.log(a%2==0 ? "Even" : "Odd");
+
+        console.log("3. Check Voting Eligibility")
+        let b=21;
+        console.log(b>=18 ? "Eligible to vote" : "Not eligible to vote");
+
+        console.log("4. Check Data Type")
+        let c="5000";
+        console.log(typeof(c));
+
+        console.log("5. Check Greater Number")
+        let d=80;
+        let e=60;
+        console.log(d>e ? d : "It is smaller");
+
+        console.log("6. Compare Two Strings")
+        let f="Akshaya";
+        let g="akshaya";
+        console.log(f==g ? "Strings are equal" : "Strings are not equal");
+
+        console.log("7. Check Multiples of 5")
+        let h=50;
+        console.log(h/5 ? "Multiple of 5" : "Not a multiple of 5");
+
+        console.log("8. Check if a Number is Zero")
+        let i=0;
+        console.log(i==0 ? "Zero" : "Not Zero");
+
+        console.log("9. Check Marks Pass/Fail")
+        let j=32;
+        console.log(j>=35 ? "Pass" : "Fail");
+
+        console.log("10.Temperature Check") 
+        let temp=40;
+        if(temp<20)
+        {
+            console.log("Cold");
+        }
+        else if(temp<=30)
+        {
+            console.log("Warm");
+        }
+        else{
+            console.log("Hot");
+        }
+
+
+        //If Else (Intermediate level)
+
+        console.log("11.Find Largest of Three Numbers")
+        let k = 10, l = 25, m = 15;
+        console.log(k > l && k > m ?  k : l > m ? l : m);
+
+
+        console.log("12.Check Leap Year")
+        let year = 2024;
+        console.log((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? "Leap Year" : "Not a Leap Year");
+
+
+        console.log("13.Check Character Type")
+        let char = "a";
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "A" || char === "E" || char === "I" || char === "O" || char === "U") {
+            console.log("Vowel");
+        } else if ((char >= "a" && char <= "z") || (char >= "A" && char <= "Z")) {
+            console.log("Consonant");
+        } else if (char >= "0" && char <= "9") {
+            console.log("Number");
+        } else {
+            console.log("Special Symbol");
+        }
+
+
+
+        console.log("14.Check Login Credentials")
+        let username = "admin";
+        let password = "1234";
+        if (username === "admin" && password === "1234") {
+            console.log("Login Success");
+        } else {
+            console.log("Invalid Credentials");
+        }
+
+
+
+
+        console.log("15.Check Grade")
+        let marks = 85;
+        if (marks >= 90) {
+            console.log("A");
+        } else if (marks >= 80) {
+            console.log("B");
+        } else if (marks >= 70) {
+            console.log("C");
+        } else {
+            console.log("Fail");
+        }
+
+
+        console.log("16.Check Number Sign and Parity")
+        let nu = 7;
+        if (nu > 0 && nu % 2 === 0) {
+            console.log("Positive Even");
+        } else if (nu > 0 && nu % 2 !== 0) {
+            console.log("Positive Odd");
+        } else if (nu < 0) {
+            console.log("Negative Number");
+        } else {
+            console.log("Zero");
+        }
+
+
+
+
+        console.log("17.Check Data Type and Value")
+        let data = "Hello";
+        if (typeof data === "string" && data !== "") {
+            console.log("Valid String");
+        } else {
+            console.log("Invalid");
+        }
+
+
+
+        console.log("18.Discount Calculation")
+        let price = 1200;
+        if (price > 1000) {
+            console.log("20% Discount");
+        } else if (price > 500) {
+            console.log("10% Discount");
+        } else {
+            console.log("No Discount");
+        }
+
+
+
+
+        console.log("19.Compare Two Numbers (Equal or Not)")
+        let x = 10;
+        let y = "10";
+        if (x == y) {
+            console.log("Equal with ==");
+        } else {
+            console.log("Not Equal with ==");
+        }
+        if (x === y) {
+            console.log("Equal with ===");
+        } else {
+            console.log("Not Equal with ===");
+        }
+        console.log("20.Simple Calculator Using If-Else")
+        let num1 = 10;
+        let num2 = 5;
+        let operator = "*";
+        if (operator === "+") {
+            console.log("Result:", num1 + num2);
+        } else if (operator === "-") {
+            console.log("Result:", num1 - num2);
+        } else if (operator === "*") {
+            console.log("Result:", num1 * num2);
+        } else if (operator === "/") {
+            console.log("Result:", num1 / num2);
+        } else {
+            console.log("Invalid Operator");
+        }
+
+
+        // switch case
+
+        // 1. Check Positive or Negative Number using switch case
+        let n = 45
+        switch (true) {
+            case (n > 0):
+                console.log("Positive");
+                break;
+            case (n < 0):
+                console.log("Negative");
+                break;
+            case (n === 0):
+                console.log("Zero");
+                break;
+            default:
+                console.log("Invalid input");
+        }
+        //2. Check Even or Odd Input a number.Print “Even” if divisible by 2, else “Odd”.
+        switch (true) {
+            case (n % 2 == 0):
+                console.log("Even");
+                break;
+            default:
+                console.log("Odd");
+        }
+        //3. Check Voting Eligibility Input an age.Print “Eligible to Vote” if age ≥ 18, else “Not Eligible”.
+        switch (true) {
+            case (n >= 18):
+                console.log("Your Eligible for Vote");
+                break;
+            default:
+                console.log("Your not Eligible for Vote");
+        }
+        //4. Check Data Type Declare a variable and check if it’s a number, string, or boolean using typeof.
+        let data1 = true;
+        switch (typeof data1) {
+            case "number":
+                console.log("It is a Number");
+                break;
+            case "string":
+                console.log("It is a String");
+                break;
+            case "boolean":
+                console.log("It is a Boolean");
+                break;
+            default:
+                console.log("Unknown Data Type");
+        }
+        //5. Check Greater Number Input two numbers.Print which one is greater.
+        let n1 = 90, n2 = 74
+        switch (true) {
+            case (n1 > n2):
+                console.log(n1, "n1 is greater number");
+                break
+            default:
+                console.log(n2, "n2 is greater number");
+                break
+        }
+        //6. Compare Two Strings Input two string variables and check if they are equal or not.
+        let str1 = "hello", str2 = "hi"
+        switch (true) {
+            case (str1 == str2):
+                console.log("Both Strings are equal");
+                break;
+
+            default:
+                console.log("Both Strings are not equal");
+                break;
+        }
+        //Check Multiples of 5 Input a number.Print “Multiple of 5” if it’s divisible by 5.
+        let h1 = 50
+        switch (true) {
+            case (h1 % 5 == 0):
+                console.log("Given number is divisible by 5");
+                break;
+            default:
+                console.log("Given number is divisible not by 5");
+                break;
+        }
+
+        // 8. Check if a Number is Zero using switch case
+        let z = 10;
+        switch (z) {
+            case 0:
+                console.log("Zero");
+                break;
+            default:
+                console.log("Not Zero");
+                break;
+        }
+        //9. Check Marks Pass / Fail If marks ≥ 35 → “Pass”, else → “Fail”.
+        switch (true) {
+            case (marks >= 35):
+                console.log("Pass")
+                break;
+            default:
+                console.log("Fail")
+                break;
+        }
+        //10.Temperature Check If temp < 20 → “Cold”, temp 20–30 → “Warm”, else → “Hot”.
+        switch (true) {
+            case (temp < 20):
+                console.log("Cold");
+                break;
+            case (temp >= 20 && temp <= 30):
+                console.log("Warm");
+                break;
+            default:
+                console.log("Hot");
+                break;
+        }
+        //11.Find Largest of Three Numbers Input three numbers and print the largest one.
+        let a1 = 25;
+        let b1 = 40;
+        let c1 = 15;
+
+        switch (true) {
+            case (a1 > b1 && a > c1):
+                console.log("Largest number is: " + a);
+                break;
+
+            case (b1 > a1 && b1 > c1):
+                console.log("Largest number is: " + b);
+                break;
+
+            case (c1 > a1 && c1 > b1):
+                console.log("Largest number is: " + c);
+                break;
+
+            default:
+                console.log("Two or more numbers are equal and largest");
+                break;
+        }
+        //12.Check Leap Year If year divisible by 4 and not by 100, or divisible by 400 → “Leap Year”.
+        let yr = 2004
+        switch (true) {
+            case (yr % 4 === 0 && yr % 100 !== 0) || (yr % 400 === 0):
+            console.log("Leap Year");
+            break;
+            default:
+            console.log("Not a Leap Year");
+            break;
+        }
+
+        //13.Check Character Type Input a character.Check if it’s a vowel, consonant, number, or special symbol.
+       switch (true) {
+        case /^[0-9]$/.test(char):
+            console.log("Number");
+            break;
+        case /^[aeiouAEIOU]$/.test(char):
+            console.log("Vowel");
+            break;
+        case /^[A-Za-z]$/.test(char):
+            console.log("Consonant");
+            break;
+        default:
+            console.log("Special Symbol");
+            break;
+    }
+
+        //14.Check Login Credentials If username === "admin" and password === "1234" → print “Login Success”, else “Invalid Credentials”.
+
+        switch (true) {
+            case (username === "admin" && password === "1234"):
+                console.log("Login Success");
+                break;
+            default:
+                console.log("Invalid Credentials");
+                break;
+        }
+        // 15.Check Grade If marks ≥ 90 → “A”, ≥ 80 → “B”, ≥ 70 → “C”, else “Fail”
+        switch (true) {
+            case (marks >= 90):
+                console.log("A");
+                break;
+            case (marks >= 80):
+                console.log("B");
+                break;
+            case (marks >= 70):
+                console.log("C");
+                break;
+            default:
+                console.log("Fail");
+                break;
+        }
+
+
+        //16.Check Number Sign and Parity
+        switch (true) {
+            case (nu > 0 && nu % 2 === 0):
+                console.log("Positive Even");
+                break;
+            case (nu > 0 && nu % 2 !== 0):
+                console.log("Positive Odd");
+                break;
+            case (nu < 0):
+                console.log("Negative Number");
+                break;
+            default:
+                console.log("Zero");
+                break;
+        }
+
+        //17.Check Data Type and Value
+        switch (true) {
+            case (typeof data === "string" && data !== ""):
+                console.log("Valid String");
+                break;
+            default:
+                console.log("Invalid");
+                break;
+        }
+
+
+        //18.Discount Calculation
+
+        switch (true) {
+            case (price > 1000):
+                console.log("20% Discount");
+                break;
+            case (price > 500):
+                console.log("10% Discount");
+                break;
+            default:
+                console.log("No Discount");
+                break;
+        }
+
+        //19.Compare Two Numbers (Equal or Not)
+
+        switch (true) {
+            case (x == y):
+                console.log("Equal with ==");
+                break;
+            case (x === y):
+                console.log("Equal with ===");
+                break;
+
+            default:
+                console.log("Not Equal with ===");
+                break;
+        }
+
+        //20.Simple Calculator Using If-Else
+        switch (true) {
+            case (operator === "+"):
+                console.log("Result:", num1 + num2);
+                break;
+            case (operator === "-"):
+                console.log("Result:", num1 - num2);
+                break;
+            case (operator === "*"):
+                console.log("Result:", num1 * num2);
+                break;
+            case (operator === "/"):
+                console.log("Result:", num1 / num2);
+                break;
+            default:
+                console.log("Invalid Operator");
+                break;
+        }
+    </script>
+</body>
+</html>
