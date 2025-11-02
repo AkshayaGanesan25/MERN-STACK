@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Level 1: Basics (Push, Pop, Shift, Unshift, Length,Join)");
+        
+console.log("1. Create an array of 5 fruits. Add one more fruit at the end using push().");
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+fruits.push("fig");
+console.log(fruits);
+console.log("2. Remove the last fruit from an array using pop().");
+fruits.pop()
+console.log(fruits);
+console.log("3. Add one new fruit at the beginning using unshift().");
+fruits.unshift("mango")
+console.log(fruits);
+console.log("4. Remove the first fruit using shift().");
+fruits.shift();
+console.log(fruits);
+console.log(" 5. Find and display the length of the array.");
+console.log("Lenth of the array:",fruits.length);
+console.log("6. Convert an array of fruits into a single string using join(", ").");
+console.log(fruits.join(", "));
+console.log("7. Create an array of colors and print the last element using length- 1.")
+let colors=['red', 'grean','blue','white']
+console.log("Last element:",colors[colors.length-1]);
+console.log("8. Create an array of 3 names, add two names using push(), and remove one using shift().");
+let name=['akshu','abi','nithya']
+console.log(name);
+name.push('meenakshi','aasiya')
+console.log("After adding two names:",name);
+name.shift()
+console.log("After removing a value",name);
+console.log("9. Use join() to print the sentence: I like apple, banana, orange.");
+let word=['I like apple','banana','orange']
+console.log(word.join(", "));
+console.log("10. Combine push() and pop() to simulate adding and removing queue items.");
+let box=['z','x','c']
+box.push('y')
+box.reverse().pop()
+box.reverse()
+console.log(box);
+//
+console.log("Level 2: Searching and Checking (indexOf, includes, concat)");
+console.log("11. Create an array of animals. Check if dog exists using includes().");
+let animals=['cat','dog','horse']
+console.log(animals.includes('dog'));
+console.log("12. Find the position of cat in an array using indexOf().");
+console.log(animals.indexOf('cat'));
+console.log("13. Merge two arrays [1,2,3] and [4,5,6] using concat().");
+let x=[1,2,3]
+let y =[4,5,6]
+console.log(x.concat(y));
+console.log("14. Create two arrays — boys and girls, merge into students.");
+let boys=['ganesan','kalai','ashwin']
+let girls=['akshaya','vasuki','yazhu']
+let students=[...boys,...girls]
+console.log("15. Check if lion exists in an animal array; if not, add it.");
+if(animals.includes('lion'))
+{
+console.log(animals)
+}
+else{
+    console.log("lion  not exist,now it we can");
+    animals.push('lion')
+}
+console.log(animals);
+console.log("16. Create an array of cities and check the index of Chennai.");
+let city=['madurai','chennai','bangalore','mumbai']
+console.log("Index of Chennai",city.indexOf('chennai'));
+console.log("17. Merge three arrays [a,b], [c,d], [e,f] using concat().");
+let m=['a','b']
+let n=['c','d']
+let o=['e','f']
+console.log(m.concat(n,o));
+console.log("18. Use includes() to check if watermelon is in the fruit array.");
+console.log(fruits.includes('watermelon'));
+console.log("19. Create a combined array of numbers and sort them (use concat() + sort()).");
+let arr1 = [5, 2, 9];
+let arr2 = [1, 7, 3];
+let combined = arr1.concat(arr2);
+combined.sort(function(a, b) {
+  return a - b;
+});
+console.log("Combined and sorted array:", combined);
+console.log("20. Join three small arrays of subjects into one array.");
+let subjects1 = ["Math", "Science"];
+let subjects2 = ["English", "History"];
+let subjects3 = ["Computer", "Art"];
+let allSubjects = subjects1.concat(subjects2, subjects3);
+console.log("All subjects:", allSubjects);
+//
+console.log("Level 3: Slicing and Splicing (slice, splice)");
+console.log("21. Create an array [10, 20, 30, 40, 50]. Use slice(1,4) and print result.");
+let num=[10,20,30,40,50]
+console.log(num.slice(1,4));
+console.log("22. Remove banana from [apple,banana,cherry] using splice().");
+console.log(fruits.splice(1,1));
+console.log(fruits);
+console.log("23.Insert grape between appple and cherry using splice()");
+console.log(fruits.splice(1,0,"grape"));
+console.log(fruits);
+console.log("24. Extract first 3 elements from [5,10,15,20,25] using slice().");
+num=[5,10,15,20,25]
+console.log(num.slice(0,3));
+console.log("25. Replace dog with tiger in [cat,dog,lion] using splice()");
+animals.splice(1,1,"tiger")
+console.log(animals);
+console.log("26. Remove 2 middle items from [1,2,3,4,5] using splice().");
+num=[1,2,3,4,5]
+num.splice(1,2)
+console.log(num);
+console.log("27. Add 2 new colors in between using splice().");
+console.log(colors.splice(2,0,"violet",'black'));
+console.log(colors);
+console.log("28. Copy the last 2 items from an array using slice(-2).");
+let colors2 = colors.slice(-2)
+console.log(colors2);
+console.log("29. Clone an entire array using slice().");
+let copyclr= colors.slice(0)
+console.log(copyclr);
+console.log("30. Create a copy of an array without changing the original (demonstrate slice() immutability).");
+let copyFruits = fruits.slice();
+copyFruits.push("orange"); 
+console.log("Original array:", fruits);      
+console.log("Copied array:", copyFruits)
+console.log("31. Use forEach() to print all numbers in [10,20,30,40].");
+
+let nums = [10, 20, 30, 40];
+nums.forEach(num => {
+  console.log(num);
+});
+console.log("32. Use map() to double each number in [1,2,3,4,5].");
+let numbers = [1, 2, 3, 4, 5];
+let doubled = numbers.map(num => num * 2);
+console.log(doubled);
+console.log("33. Use map() to convert an array of names to uppercase.");
+let names = ["akshaya", "ganesan"];
+let upperNames = names.map(name => name.toUpperCase());
+console.log(upperNames); 
+console.log("34. Use filter() to keep only even numbers from [10,15,20,25,30].");
+let mixs = [10, 15, 20, 25, 30];
+let even = mixs.filter(num => num % 2 === 0);
+console.log(even); 
+// console.log("");
+// console.log("");
+// console.log("");
+</script>
+</body>
+</html>
