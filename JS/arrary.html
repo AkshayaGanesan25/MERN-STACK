@@ -146,10 +146,96 @@ console.log(upperNames);
 console.log("34. Use filter() to keep only even numbers from [10,15,20,25,30].");
 let mixs = [10, 15, 20, 25, 30];
 let even = mixs.filter(num => num % 2 === 0);
-console.log(even); 
-// console.log("");
-// console.log("");
-// console.log("");
+console.log(even);
+console.log("35.Filter out names that start with letter A from [Ajay, Bala, Anu, Deepa].");
+
+         names = ['Ajay', 'Bala', 'Anu', 'Deepa'];
+        res = names.filter(ele => ele.startsWith('A'));
+
+        console.log(res);
+
+
+        console.log("36. Use forEach() to print “Student: <name>” for each student.");
+
+        name.forEach(Stdname => {
+            console.log("Student: " + Stdname);
+        });
+
+
+        console.log("Use map() to create a new array of squared values from  [2, 4, 6, 8].");
+        num = [2, 4, 6, 8];
+        let squared = num.map(num => num * num);
+        console.log(squared);
+
+        console.log("38. Filter out all negative numbers from [10, -5, 8, -3,12].");
+        num = [10, -5, 8, -3, 12]
+        let neg = num.filter(n => n <= 0)
+        console.log(neg);
+
+        console.log("39. Use map() to add “Mr./Ms.” before each name in an array.");
+        names = ['Ajay', 'Bala', 'Anu', 'Deepa'];
+        let updatedNames = names.map(name => "Mr./Ms. " + name);
+        console.log(updatedNames);
+
+        console.log("40. Filter the array of marks [40,55,75,90,35] to show only pass marks(≥50).");
+        let marks = [40, 55, 75, 90, 35]
+        let mark = marks.filter(n => n >= 50)
+        console.log(mark);
+
+        //Level 5: Advanced Operations (reduce, sort, reverse, find, some, every)
+
+        console.log("41. Use reduce() to find the sum of [5,10,15,20].");
+        num = [5, 10, 15, 20]
+        let sum = num.reduce((acc, num) => acc + num, 0);
+        console.log(sum);
+
+        console.log("42. Use reduce() to find the product of [2,3,4,5].");
+        num = [2, 3, 4, 5]
+        sum = num.reduce((acc, num) => acc * num, 1);
+        console.log(sum);
+
+        console.log("43. Sort [30, 10, 50, 20, 40] in ascending order using sort().");
+         numbers = [30, 10, 50, 20, 40];
+        numbers.sort((a, b) => a - b);
+        console.log(numbers);
+
+        console.log("44. Reverse an array of numbers [1,2,3,4,5] using reverse().");
+        num = [1, 2, 3, 4, 5]
+        num.reverse()
+        console.log(num);
+
+        console.log("45. Use find() to get the first number greater than 50 from [10, 60, 30, 80, 40].");
+        num = [10, 60, 30, 80, 40];
+        let result = num.find((n) => n > 50);
+        console.log(result);
+
+        console.log("46. Use some() to check if any number is above 100 in [10, 50, 80, 30].");
+        num = [10, 50, 80, 30]
+        result = num.some((n) => n > 100);
+        console.log(result);
+
+        console.log("47. Use every() to check if all numbers are positive in [2, 4, 6, 8].");
+        numbers = [2, 4, 6, 8];
+        let allPositive = numbers.every((n) => n > 0);
+
+        console.log("Are all numbers positive?", allPositive);
+
+
+        console.log("48. Use sort() to arrange names alphabetically.");
+        name = ['Ajay', 'Bala', 'Anu', 'Deepa'];
+        name.sort()
+        console.log(name);
+
+        console.log("49. Use reverse() to show names in reverse alphabetical order.");
+        name.reverse()
+        console.log(name);
+
+        console.log("50. Combine filter() and reduce() to find the sum of only even numbers from [1, 2, 3, 4, 5, 6, 7, 8].");
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+        let evenNumbers = numbers.filter((n) => n % 2 === 0);
+        sum = evenNumbers.reduce((acc, n) => acc + n, 0);
+        console.log("Even numbers:", evenNumbers);
+        console.log("Sum of even numbers:", sum);
 </script>
 </body>
 </html>
