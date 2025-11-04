@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // String Function
+        console.log("String Function");
+
+        console.log("1. Count Number of vowels in String");
+        let str = "Hello World";
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            let ch = str[i].toLowerCase();
+            if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+                count++;
+            }
+        }
+        console.log("Number of vowels:", count);
+
+
+        console.log("2. Reverse a String without using .reverse()");
+        let Rstr = "Hello";
+        let reversed = "";
+        for (let i = Rstr.length - 1; i >= 0; i--) {
+            reversed += Rstr[i];
+        }
+        console.log("Reversed String:", reversed);
+
+
+        console.log("3. Check a string is a palindrome");
+        str = "madam";
+        reversed = str.split('').reverse().join('');
+
+        if (str === reversed) {
+            console.log(str + " is a palindrome");
+        } else {
+            console.log(str + " is not a palindrome");
+        }
+
+
+        console.log("4. Convert first letter into UpperCase");
+        let capitalized = str.charAt(0).toUpperCase() + str.slice(1)
+        console.log(capitalized);
+
+
+        console.log("5. Replace all spaces inti - ");
+        let Repalce = "welcome to all"
+        console.log(Repalce.replaceAll(" ", "-"));
+
+        console.log("6. Find number of times a particular word appears in a sentance");
+        let nstr = "welcome to all! learn to javascript"
+        let word = "to";
+        count = nstr.toLowerCase().split(/\bto\b/).length - 1;
+        console.log("The word '" + word + "' appears " + count + " times.");
+
+
+
+        console.log("7.Extract only digit from string");
+        let substr = "ab12cd34";
+        let digits = "";
+        for (let i = 0; i < substr.length; i++) {
+            if (substr[i] >= '0' && substr[i] <= '9') {
+                digits += substr[i];
+            }
+        }
+        console.log("Extracted digits:", digits);
+
+
+        console.log("8. check a string contain another substring");
+        let mainstr = "apple is red color"
+        let subStr = "apple"
+        console.log(mainstr.includes(subStr));
+
+
+        console.log("9. Trim all extra space from both end and start");
+        let tstr = "    JavaScript   "
+        console.log(tstr.trim());
+
+        console.log("10.Count how many times each character appears in a string.");
+        let str1 = "hello world";
+        let coun = {};
+        for (let ch of str1) {
+            if (ch != " ") {
+                coun[ch] = (coun[ch] || 0) + 1;
+            }
+        }
+        console.log(coun);
+
+
+        console.log("11.Find the longest word in a sentence.");
+        let sentence = "I love programming";
+        let words = sentence.split(" ");
+        let longest = "";
+        for (let word of words) {
+            if (word.length > longest.length) {
+                longest = word;
+            }
+        }
+        console.log("Longest word:", longest);
+
+
+
+        console.log("12.Check if two strings are anagrams of each other.");
+        let str3 = "listen";
+        let str2 = "silent";
+        let sorted1 = str3.split("").sort().join("");
+        let sorted2 = str2.split("").sort().join("");
+        if (sorted1 === sorted2) {
+            console.log("Anagrams");
+        }
+        else {
+            console.log("Not Anagrams");
+        }
+
+
+
+        console.log("13. Convert 'hello_world_program' to 'Hello World Program'");
+        let str4 = "hello_world_program";
+        let resul = str
+            .split("_")
+            .map(word => word[0].toUpperCase() + word.slice(1))
+            .join(" ");
+        console.log(resul);
+
+
+        console.log("14. Find the index of the second occurrence of a given letter");
+        let a = "programming";
+        let letter = "g";
+        let first = a.indexOf(letter);
+        let sec = a.indexOf(letter, first + 1);
+        console.log("Second occurrence index:", sec);
+
+
+
+        console.log("15. Remove duplicate characters from a string");
+        let b = "programming";
+        let result = "";
+        for (let ch of b) {
+            if (!result.includes(ch)) {
+                result += ch;
+            }
+        }
+        console.log(result);
+
+
+        // Math Function
+        console.log("***** Math FUNCTIONS *****");
+
+        console.log("1. Write a program to count the number of vowels in a string.");
+        str = "HellO World";
+        let vowels = "aeiouAEIOU";
+        count = 0;
+
+        for (let i = 0; i < str.length; i++) {
+            if (vowels.includes(str[i])) {
+                count++;
+            }
+        }
+        console.log("Number of vowels:", count);
+        console.log("2. Reverse a given string without using .reverse().");
+        let original = "JavaScript";
+        reversed = "";
+        for (let i = original.length - 1; i >= 0; i--) {
+            reversed += original[i];
+        }
+        console.log("Reversed string:", reversed);
+
+        console.log("3. Check whether a string is a palindrome.");
+        if (original === reversed) {
+            console.log(original + " is a palindrome.");
+        } else {
+            console.log(original + " is not a palindrome.");
+        }
+        console.log("4. Convert the first letter of each word to uppercase.");
+
+        str = "hello world welcome to javascript";
+        words = str.split(" ");
+        result = "";
+
+        for (let i = 0; i < words.length; i++) {
+            let word = words[i];
+            let capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+            result += capitalized + " ";
+        }
+
+        console.log("Converted string:", result.trim());
+        console.log("5. Replace all spaces in a string with -.");
+        let rep = (str.replaceAll(" ", "_"));
+        console.log(rep);
+
+        console.log("6. Find the number of times a particular word appears in a sentence.");
+        console.log("");
+
+        //Math Functions
+
+        console.log("1. Generate a random number between 1 and 100.");
+        console.log(Math.floor(Math.random() * 100));
+
+        console.log("2. Round a floating number to 2 decimal places.");
+        let num = 12.34567;
+        let rounded = num.toFixed(2);
+        console.log("Rounded number:", rounded);
+
+        console.log("3. Find the maximum and minimum numbers in an array.");
+        let arr = [5, 10, 2, 8, 3];
+        console.log("Maximum number:", Math.max(...arr), " Minimum number:", Math.min(...arr));
+
+        console.log("4. Calculate the square root of each number in an array.");
+        console.log("square roots:", arr.map(Math.sqrt));
+
+        console.log("5. Generate a random integer between 50 and 200.");
+        let randomNum = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
+        console.log(randomNum);
+
+        console.log("6. Find the absolute difference between two numbers.");
+        let f = -76, g = -21
+        console.log(Math.abs(f) - Math.abs(g));
+
+        console.log("7. Simulate rolling a dice (output between 1 and 6).");
+        let dice = Math.floor(Math.random() * 6) + 1;
+        console.log("You rolled:", dice);
+
+        console.log("8. Program to calculate compound interest.");
+        let principal = 10000;
+        let rate = 5;
+        let time = 2;
+        let n = 4;
+        let amount = principal * Math.pow((1 + (rate / 100) / n), n * time);
+        let compoundInterest = amount - principal;
+        console.log("Compound Interest:", compoundInterest.toFixed(2));
+        console.log("Total Amount:", amount.toFixed(2));
+
+        console.log("9. Find the area of a circle using Math.PI.");
+        let r = 5;
+        console.log("Area of circle :", (Math.PI * r ** 2).toFixed(3));
+
+        console.log("10. Check if a number is a perfect square.");
+        num = 49;
+        let sqrt = Math.sqrt(num);
+        if (Number.isInteger(sqrt)) {
+            console.log(num + " is a perfect square.");
+        } else {
+            console.log(num + " is not a perfect square.");
+        }
+
+        console.log("11.Round a number upward and downward using ceil and floor.");
+        num = 76.8
+        console.log("Round of", num, "Upward is :", Math.ceil(num), "Round of", num, "Downward is :", Math.floor(num));
+
+        console.log("12.Find the power of a number (a^b).");
+        a = 10, b = 2
+        console.log(Math.pow(a, b));
+
+        console.log("13. Generate 10 random integers and find their average.");
+        let numbers = [];
+        let sum = 0;
+
+        for (i = 0; i < 10; i++) {
+            randomNum = Math.floor(Math.random() * 100) + 1; // random integer 1–100
+            numbers.push(randomNum);
+            sum += randomNum;
+        }
+        let average = sum / numbers.length;
+        console.log("Random Numbers:", numbers);
+        console.log("Average:", average.toFixed(2));
+
+        console.log("14. Convert radians to degrees and degrees to radians.");
+        let radians = Math.PI / 4;
+        let degrees = 60;
+        let radToDeg = radians * (180 / Math.PI);
+        let degToRad = degrees * (Math.PI / 180);
+        console.log(radians + " radians = " + radToDeg.toFixed(2) + " degrees");
+        console.log(degrees + " degrees = " + degToRad.toFixed(4) + " radians");
+
+        console.log("15. Find the factorial of a number using Math functions.");
+        num = 5;
+        let fact = 1;
+        for (i = 1; i <= num; i++) {
+            fact = Math.imul(fact, i);
+        }
+        console.log("Factorial of " + num + " is:", fact);
+
+
+        //DATE FUNCTIONS
+        console.log("***** DATE FUNCTIONS *****");
+
+        // 1. Display the current date and time.
+        let now = new Date();
+        console.log(now);
+
+        //2. Get the current year, month, and day separately.
+        let year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        let day = now.getDate();
+        console.log("Year:", year);
+        console.log("Month:", month);
+        console.log("Day:", day);
+
+
+        //3. Find how many days are left in the current year.
+        let today = new Date();
+        let endOfYear = new Date(today.getFullYear(), 11, 31);
+        let diff = endOfYear - today;
+        let daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        console.log("Days left in the year:", daysLeft);
+
+        // 4. Print the name of the current day (e.g., Monday, Tuesday).
+        let dayName = today.toLocaleString("en-US", { weekday: "long" });
+        console.log("Today is:", dayName);
+
+
+        //5. Compare two dates and find which one is earlier.
+        let date1 = new Date("2025-11-04");
+        let date2 = new Date("2025-12-25");
+        if (date1 < date2) {
+            console.log("Date 1 is earlier");
+        } else if (date1 > date2) {
+            console.log("Date 2 is earlier");
+        } else {
+            console.log("Both dates are the same");
+        }
+
+        //6. Add 10 days to the current date.
+        let futureDate = new Date(today);
+        futureDate.setDate(today.getDate() + 10);
+        console.log("Today:", today.toDateString());
+        console.log("After 10 days:", futureDate.toDateString());
+
+        //7. Calculate a person’s age from their birthdate.
+        function calculateAge(birthdate) {
+            let today = new Date();
+            let birth = new Date(birthdate);
+
+            let age = today.getFullYear() - birth.getFullYear();
+            let monthDiff = today.getMonth() - birth.getMonth();
+            if (
+                monthDiff < 0 ||
+                (monthDiff === 0 && today.getDate() < birth.getDate())
+            ) {
+                age--;
+            }
+
+            return age;
+        }
+        console.log("Age:", calculateAge("2000-05-10"));
+
+
+        //8. Format the date as DD-MM-YYYY.
+        let days = String(today.getDate()).padStart(2, "0");
+        let months = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0–11
+        let years = today.getFullYear();
+        let formattedDate = `${days}-${months}-${years}`;
+        console.log("Formatted Date:", formattedDate);
+
+
+        //9. Find the number of days between two given dates.
+        let diffInMs = Math.abs(date2 - date1);
+        let diffInDays = Math.ceil(diffInMs / (1000 * 60 * 60 * 24));
+        console.log(`Number of days between are : ${diffInDays}`);
+
+
+        //10.Get the first and last day of the current month.
+        let firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
+        let lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+        console.log("First Day:", firstDay.toDateString());
+        console.log("Last Day:", lastDay.toDateString());
+
+
+        //11.Display the current time in HH:MM:SS format.
+        let hours = String(now.getHours()).padStart(2, "0");
+        let minutes = String(now.getMinutes()).padStart(2, "0");
+        let seconds = String(now.getSeconds()).padStart(2, "0");
+        let currentTime = `${hours}:${minutes}:${seconds}`;
+        console.log("Current Time:", currentTime);
+
+
+        //12.Check if today is a weekend or weekday.
+        let day1 = today.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
+        if (day1 === 0 || day1 === 6) {
+            console.log("It's a weekend!");
+        } else {
+            console.log("It's a weekday.");
+        }
+
+        //13.Display the month name (like January, February).
+        let monthName = today.toLocaleString("en-US", { month: "long" });
+        console.log("Current Month:", monthName);
+
+
+        //14.Create a countdown to a specific future date (e.g., New Year).
+        let targetDate = new Date("January 1, 2026 00:00:00");
+
+        function updateCountdown() {
+            let now = new Date();
+            let diff = targetDate - now;
+
+            if (diff <= 0) {
+                console.log("🎉 Happy New Year!");
+                clearInterval(timer);
+                return;
+            }
+
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            let minutes = Math.floor((diff / (1000 * 60)) % 60);
+            let seconds = Math.floor((diff / 1000) % 60);
+
+            console.clear();
+            console.log(
+                `Countdown to New Year: ${days}d ${hours}h ${minutes}m ${seconds}s`
+            );
+        }
+
+        let timer = setInterval(updateCountdown, 1000);
+
+
+        //15.Show the time exactly 1 hour from now.
+        let nowD = new Date();
+        let oneHourLater = new Date(now.getTime() + 60 * 60 * 1000); // add 1 hour (in milliseconds)
+        let hour = String(oneHourLater.getHours()).padStart(2, "0");
+        let minute = String(oneHourLater.getMinutes()).padStart(2, "0");
+        let second = String(oneHourLater.getSeconds()).padStart(2, "0");
+        console.log(`Current Time: ${nowD.toLocaleTimeString()}`);
+        console.log(`Time 1 Hour Later: ${hour}:${minute}:${second}`);
+
+    </script>
+</body>
+
+</html>
