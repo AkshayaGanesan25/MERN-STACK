@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card {
+    height: 60%;
+    width: 250px;
+    align-items: center;
+    border: none;
+    box-shadow: 3px 3px 3px grey;
+    background-color: rgb(202, 234, 234);
+    text-align: center;
+    padding: 20px;    
+}
+.card:hover{
+    margin: 5px;
+}
+img{
+    height:120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+   box-shadow: 3px 3px 3px rgb(119, 22, 22);
+}
+h1{
+ font-size: 18px;
+ color: rgb(104, 19, 19);
+ margin-bottom: 10px;
+}
